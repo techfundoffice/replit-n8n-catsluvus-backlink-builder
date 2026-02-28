@@ -17,7 +17,21 @@ A standalone web application that automatically submits your domain to whois loo
 - 📅 **Schedule toggles** for daily auto-build, weekly reports, retry failed
 - 🗃️ **Optional PostgreSQL** persistence (works without DB via localStorage)
 
-## Quick Start
+## GitHub Codespaces
+
+Click the green **Code** button → **Codespaces** → **Create codespace on main** to launch a ready-to-use environment.  
+Dependencies are installed automatically (`npm run install:all` runs as the `postCreateCommand`).
+
+Once the codespace is ready, open a terminal and run:
+
+```bash
+npm run dev
+```
+
+Codespaces will forward **port 5173** (Vite dev server) and open it in a browser tab automatically.  
+The Express API on **port 3001** is also forwarded if you need direct API access.
+
+## Quick Start (local)
 
 ```bash
 # Clone the repo
