@@ -1,0 +1,8 @@
+node_modules/
+dist/
+client/dist/
+*.js.map
+.env
+.env.local
+*.log
+.DS_Store

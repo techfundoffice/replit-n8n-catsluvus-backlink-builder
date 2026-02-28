@@ -1,0 +1,28 @@
+{
+  "name": "replit-n8n-catsluvus-backlink-builder",
+  "version": "1.0.0",
+  "description": "Standalone SEO Backlink Builder - Automated backlink generation across 3,000+ web directories & Whois sites",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n server,client -c blue,green \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "cd server && npx tsx watch index.ts",
+    "dev:client": "cd client && npm run dev",
+    "build": "cd client && npm install && npm run build",
+    "start": "cd server && node --import tsx index.ts",
+    "install:all": "npm install && cd client && npm install"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "drizzle-orm": "^0.38.0",
+    "pg": "^8.13.0",
+    "dotenv": "^16.4.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "concurrently": "^9.1.0",
+    "@types/express": "^5.0.0",
+    "@types/pg": "^8.11.0",
+    "@types/node": "^22.0.0"
+  }
+}
